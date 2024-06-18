@@ -332,7 +332,7 @@
 
 .step {
   /* Adicione estilos */
-  width: 220px;
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -369,13 +369,12 @@
 }
 
 .footer__column_content_hours {
-  margin-right: 80px;
-  margin-left: 0px;
+  margin-left: auto;
+  margin-right: 0px;
 }
 
 .footer__column_content_social {
-  margin: 0px;
-  margin-left: 0px;
+  margin: 0 0 0 80px;
 }
 
 .footer__logo {
@@ -403,9 +402,11 @@
 }
 
 .footer__column-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   color: white;
   text-decoration: none;
-  margin-right: 10px;
 }
 
 .footer__social-icon {
